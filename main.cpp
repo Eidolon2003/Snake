@@ -7,7 +7,7 @@ int main() {
 	jaw::AppProperties ap;
 	ap.layerCount = 2;
 	ap.backgroundCount = 1;
-	ap.framerate = 10;
+	ap.framerate = Snake::FRAMERATE;
 	ap.size = jaw::Point(SCREEN_SIZE, SCREEN_SIZE);
 	ap.title = "Snake";
 

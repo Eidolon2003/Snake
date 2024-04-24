@@ -15,12 +15,14 @@ class Snake : public jaw::AppInterface {
 
 	void Reset();
 	jaw::Point RandPos() const;
+	void RandApple();
 	void DrawTile(uint32_t color, jaw::Point tile) const;
 
 public:
 	static const uint8_t NUM_TILES = 32;
 	static const uint8_t TILE_SIZE = 16;
 	static const uint8_t GAP_SIZE = 2;
+	static const uint8_t FRAMERATE = 12;
 
 	void Init() override;
 	void Loop() override;
